@@ -9,6 +9,7 @@ var SCRIPT_END = '</'+SCRIPT+'>'
 module.exports = transformHtml
 
 function transformHtml(externalTags, opts){
+  opts = opts || {}
   var args = {}
   var op = {}
 
