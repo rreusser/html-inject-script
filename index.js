@@ -10,6 +10,7 @@ module.exports = transformHtml
 
 function transformHtml(externalTags, opts){
   opts = opts || {}
+  opts.selector = typeof opts.selector === 'undefined' ? 'head' : opts.selector
   var args = {}
   var op = {}
 
