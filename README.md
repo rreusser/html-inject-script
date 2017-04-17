@@ -1,11 +1,11 @@
-# html-inject-script
+# @rreusser/html-inject-script
 
 Transform stream for injecting script tags into html.
 
 ### example:
 
 ```js
-var injectScripts = require('html-inject-script')
+var injectScripts = require('@rreusser/html-inject-script')
 
 process.stdin
 .pipe( injectScripts(['./app.js', './extra.js']) )
@@ -23,7 +23,7 @@ output:
 
 ### api
 
-#### `require('html-inject-script')(scripts[, opts])`
+#### `require('@rreusser/html-inject-script')(scripts[, opts])`
 
 Injects an array of scripts. Accepts an object of options:
 - `selector` (`string`, default: `'head'`): A [hyperstream](https://github.com/substack/hyperstream) selector into which the tags are injected
